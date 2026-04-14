@@ -46,7 +46,7 @@ Rectangle {
         Item {
 
         id: imageSource
-        width:  Math.min(parent.width * 0.4, parent.height * 0.5 * (4/3))
+        width:  Math.min(parent.width * 0.55, parent.height * 0.6875 * (4/3))
         height: width * 0.75
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.verticalCenter: parent.verticalCenter
