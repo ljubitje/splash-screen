@@ -50,11 +50,9 @@ Rectangle {
 
         Rectangle {
 
-        property int sizeAnim: 500
-
         id: imageSource
-        width:  sizeAnim
-        height: sizeAnim
+        width:  Math.min(parent.width * 0.4, parent.height * 0.5 * (4/3))
+        height: width * 0.75
         color:  "transparent"
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.verticalCenter: parent.verticalCenter
@@ -64,10 +62,8 @@ Rectangle {
             id: face
             source: "images/fish.gif"
             paused: false
-            anchors.horizontalCenter: parent.horizontalCenter
-            anchors.verticalCenter: parent.verticalCenter
-            width:  imageSource.sizeAnim - 2
-            height: imageSource.sizeAnim - 2
+            anchors.fill: parent
+            fillMode: AnimatedImage.PreserveAspectFit
             smooth: false
             visible: true
             cache: true
