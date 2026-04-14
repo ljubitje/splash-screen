@@ -64,11 +64,10 @@ Rectangle {
             paused: false
             anchors.fill: parent
             fillMode: AnimatedImage.PreserveAspectFit
-            smooth: false
+            smooth: true
             visible: true
             cache: true
-            asynchronous: true
-            layer.enabled: true
+            asynchronous: false
          }
     }
 
