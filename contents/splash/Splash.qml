@@ -48,15 +48,13 @@ Rectangle {
             property int smallSpacing: Math.max(2, gridUnit/4)
         }
 
-        Rectangle {
+        Item {
 
         id: imageSource
         width:  Math.min(parent.width * 0.4, parent.height * 0.5 * (4/3))
         height: width * 0.75
-        color:  "transparent"
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.verticalCenter: parent.verticalCenter
-        clip: true;
 
         AnimatedImage {
             id: face
@@ -65,7 +63,6 @@ Rectangle {
             anchors.fill: parent
             fillMode: AnimatedImage.PreserveAspectFit
             smooth: true
-            visible: true
             cache: true
             asynchronous: false
          }
