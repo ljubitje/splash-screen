@@ -1,3 +1,5 @@
 *.jpg
 PRD.md
 .claude/
+CLEANUP.md
+tools/
